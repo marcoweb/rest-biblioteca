@@ -1,0 +1,22 @@
+@url = https://solid-space-garbanzo-jrjggvg5gjcpr55-8080.app.github.dev
+
+GET {{url}}/generos
+
+###
+POST {{url}}/generos
+Content-Type: application/json
+
+{
+    "nome": "Aventura"
+}
+
+###
+PUT {{url}}/generos/1
+Content-Type: application/json
+
+{
+    "nome": "Aventura"
+}
+
+###
+DELETE {{url}}/generos/1

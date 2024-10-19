@@ -1,0 +1,27 @@
+@url = https://solid-space-garbanzo-jrjggvg5gjcpr55-8080.app.github.dev
+
+
+GET {{url}}/livros
+
+###
+POST {{url}}/livros
+Content-Type: application/json
+
+{
+    "titulo": "As Duas Torres",
+    "genero" : {
+        "id": 2,
+        "nome": "????"
+    }
+}
+
+###
+PUT {{url}}/livros/3
+Content-Type: application/json
+
+{
+    "titulo": "A Sociedade do Anel",
+    "genero": {
+        "id": 2
+    }
+}
